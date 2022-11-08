@@ -31,6 +31,9 @@ int main(){
                     userWord[i] = userGuess;
                 }
             }
+            if(randWord == userWord){
+                break;
+            }
             printf("%c\n", userWord);
             try--;
             printf("You tried %d times. You have %d more chances.\n", 7 - try, try);
